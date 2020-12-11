@@ -15,11 +15,11 @@ class Client:
         
         while 1: #test server connectivity
             try:
-                #host = input('Enter host name --> ')
-                host = "192.168.0.153"
+                host = input('Enter host name --> ')
+                #host = "192.168.0.153"
                 print(type(host))
-                port = 4444
-                #port = int(input('Enter port --> '))
+                #port = 4444
+                port = int(input('Enter port --> '))
                 print(type(port))
                 self.s.connect((host,port)) #Connects to server with port number
                 
